@@ -1,5 +1,7 @@
 import 'dart:math';
 
+import 'data/data_siswa.dart';
+
 class Individu {
   String nama;
   String gender;
@@ -76,13 +78,6 @@ Individu mutasi(Individu individu, double probMutasi) {
 }
 
 void main() {
-  List<Map<String, dynamic>> namaSiswa = [
-    {"nama": "Adi", "gender": "Laki-laki"},
-    {"nama": "Budi", "gender": "Laki-laki"},
-    {"nama": "Citra", "gender": "Perempuan"},
-    // Sisanya didefinisikan di sini...
-  ];
-
   final int jumlahIndividu = namaSiswa.length;
   final int jumlahGenerasi = namaSiswa.length;
 
